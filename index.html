@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSON Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getYearAndUrl()">
+    <header>
+      <a href="#" id="currentPage">
+        <h1>JSON Formatter</h1>
+      </a>
+    </header>
+    <div class="seo-content">
+      <h3>What Is JSON Formatter?</h3>
+      <ul>
+        <li>
+          Are you tired of trying to read and debug messy JSON code? Our free
+          JSON formatter tool makes it easy to beautify and validate your JSON
+          data.
+        </li>
+        <li>
+          With our JSON formatter, you can easily format and style your JSON
+          data with color-coded syntax highlighting for improved readability and
+          easier debugging.
+        </li>
+        <li>
+          Our tool is completely free and requires no downloads or
+          installations. Simply paste your JSON code into the input field to see
+          the results.
+        </li>
+        <li>
+          In addition to formatting, our tool also validates your JSON code to
+          ensure that it is properly formatted and error-free.
+        </li>
+        <li>
+          Don't waste time trying to manually format your JSON data - use our
+          free JSON formatter tool and streamline your workflow today!
+        </li>
+      </ul>
+      <!-- <h3>How to Use the JSON Formatter</h3>
+      <ul>
+        <li>Paste the JSON code into the input field</li>
+        <li>Click on the "Format JSON" button to see the formatted output</li>
+        <li>
+          Copy the formatted JSON to your clipboard using the "Copy" button
+        </li>
+      </ul>
+      <h3>JSON Formatter Options</h3>
+      <ul>
+        <li>Change the color scheme of the formatted JSON</li>
+        <li>Toggle the display of line numbers and indentation guides</li>
+      </ul> -->
+    </div>
+    <main>
+      <section class="input-section">
+        <h2>Input JSON:</h2>
+        <textarea id="input-json"></textarea>
+      </section>
+      <section class="output-section">
+        <h2>Formatted JSON:</h2>
+        <pre id="output-json"></pre>
+      </section>
+    </main>
+    <footer>
+      <p>
+        JSON Formatter &copy; <span id="getYear"></span>. DEVELOP & MAINTAIN BY
+        MAK DEVELOPMENT HOUSE.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
