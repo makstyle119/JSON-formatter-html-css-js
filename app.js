@@ -33,3 +33,14 @@ const getYearAndUrl = () => {
   year.innerText = new Date().getFullYear();
   currentPage.href = window.location.href;
 };
+
+function copyJson() {
+  var copyText = document.getElementById('output-json').innerText;
+  var tempElement = document.createElement('textarea');
+  tempElement.value = copyText;
+  document.body.appendChild(tempElement);
+  tempElement.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempElement);
+  alert('JSON copied to clipboard!');
+}

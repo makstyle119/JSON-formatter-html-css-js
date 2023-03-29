@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <title>JSON Formatter</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body onload="getYearAndUrl()">
     <header>
@@ -38,19 +45,6 @@
           free JSON formatter tool and streamline your workflow today!
         </li>
       </ul>
-      <!-- <h3>How to Use the JSON Formatter</h3>
-      <ul>
-        <li>Paste the JSON code into the input field</li>
-        <li>Click on the "Format JSON" button to see the formatted output</li>
-        <li>
-          Copy the formatted JSON to your clipboard using the "Copy" button
-        </li>
-      </ul>
-      <h3>JSON Formatter Options</h3>
-      <ul>
-        <li>Change the color scheme of the formatted JSON</li>
-        <li>Toggle the display of line numbers and indentation guides</li>
-      </ul> -->
     </div>
     <main>
       <section class="input-section">
@@ -58,7 +52,22 @@
         <textarea id="input-json"></textarea>
       </section>
       <section class="output-section">
-        <h2>Formatted JSON:</h2>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            place-items: center;
+          "
+        >
+          <h2>Formatted JSON:</h2>
+          <div class="output-topbar">
+            <!-- <span>Copy to clipboard:</span> -->
+            <button id="copy-json-btn" class="copy-btn" onclick="copyJson()">
+              <!-- Copy -->
+              <i class="fa-solid fa-copy"></i>
+            </button>
+          </div>
+        </div>
         <pre id="output-json"></pre>
       </section>
     </main>
