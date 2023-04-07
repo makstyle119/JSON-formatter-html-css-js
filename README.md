@@ -5,4 +5,6 @@ What Is JSON Formatter?
 
 * With our JSON formatter, you can easily format and style your JSON data with color-coded syntax highlighting for improved readability and easier debugging.
 
+* Our tool is completely free and requires no downloads or installations. Simply paste your JSON code into the input field to see the results.
+
 [**JSON-formatter-html-css-js**](https://makstyle119.github.io/JSON-formatter-html-css-js/)
